@@ -1,0 +1,17 @@
+<div id="show">
+    <table border="1" align="center">
+        <tr>
+            <td>ID</td>
+            <td>图片</td>
+        </tr>
+        {foreach $data as $k=>$v}
+        <tr>
+            <td>{$v['id']}</td>
+            <td><img src="{APP_UPLOAD}{$v['path_name']}" alt="" width="100px" height="100px"></td>
+        </tr>
+        {/foreach}
+    </table>
+    <p align="center">
+        {$page}
+    </p>
+</div>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>信息展示</title>
+    <link rel="stylesheet" href="{CSS}public/page.css"> <!--引入css分页样式-->
+    <script>pageurl="?m=home&c=Messagec&a=message_list";</script> <!--设置分页跳转路径-->
+    <script src="{JS}public/jquery-1.8.3.min.js"></script> <!--引入jquery文件-->
+    <script src="{JS}public/page.js"></script><!--引入分页js配置-->
+</head>
+<body>
+{include file="{APP_PPDP}/search.html"}
+<div id="show">
+    <table border="1" align="center">
+        <tr>
+            <td>ID</td>
+            <td>用户名</td>
+            <td>邮箱</td>
+            <td>操作</td>
+        </tr>
+        {foreach $data as $key=>$val}
+        <tr>
+            <td>{$val.id}</td>
+            <td>{$val.user}</td>
+            <td>{$val.email}</td>
+            <td><a href="?m=home&c=Messagec&a=message_updatesel&id={$val.id}">编辑</a>/<a href="?m=home&c=Messagec&a=message_delete&id={$val.id}">删除</a></td>
+        </tr>
+        {/foreach}
+    </table>
+    <p align="center">
+        {$page}
+    </p>
+</div>
+</body>
+</html>

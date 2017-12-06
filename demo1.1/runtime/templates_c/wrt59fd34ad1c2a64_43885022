@@ -1,0 +1,67 @@
+<?php
+/* Smarty version 3.1.30, created on 2017-11-04 11:31:57
+  from "D:\phpStudy\WWW\PackIDE1.1\views\home\loginc\index.html" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_59fd34ad1bffa6_27689659',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'f212a4cdff40ba58046164c6612581aa1637953e' => 
+    array (
+      0 => 'D:\\phpStudy\\WWW\\PackIDE1.1\\views\\home\\loginc\\index.html',
+      1 => 1509766312,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_59fd34ad1bffa6_27689659 (Smarty_Internal_Template $_smarty_tpl) {
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎登录</title>
+    <link rel="stylesheet" href="<?php echo CSS;?>
+home/com.css">
+    <?php echo '<script'; ?>
+>verifysurl="?m=home&c=loginc&a=verifys"<?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS;?>
+public/jquery-1.8.3.min.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS;?>
+public/verifys.js"><?php echo '</script'; ?>
+>
+</head>
+<body>
+<form action="<?php echo $_smarty_tpl->tpl_vars['form']->value;?>
+" method="post">
+<table border="1">
+    <tr>
+        <td>用户名</td>
+        <td><input type="text" name="user"></td>
+    </tr>
+    <tr>
+        <td>密码</td>
+        <td><input type="password" name="pwd"></td>
+    </tr>
+    <tr>
+        <td>验证码</td>
+        <td><img src="?m=home&c=loginc&a=verifys" class="verifys"></td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center"><input type="submit" value="登录"></td>
+    </tr>
+</table>
+</form>
+</body>
+</html><?php }
+}
