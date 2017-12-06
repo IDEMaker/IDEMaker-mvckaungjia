@@ -10,7 +10,7 @@
 
    本框架是一个基础 莫要上线商务使用 ，可能会在使用中出现一些问题 ，希望使用者/开发者 多多包涵 ，有时间 PACKIDE官方会更新哦
 
-   本框架中PACKIDE官方提供了一套 成品开源系统(IDEMaker-开源订餐系统<https://gitee.com/IDEMaker/IDEMakerKaiYuanDingCanXiTong>) ，系统中对框架中的一些问题做了些处理 比如:数据库操作类中添加执行方法中多个
+   本框架中PACKIDE官方提供了一套 成品开源系统(IDEMaker-开源订餐系统<https://github.com/IDEMaker/IDEMaker-dingcan>) ，系统中对框架中的一些问题做了些处理 比如:数据库操作类中添加执行方法中多个
 
    字段入库失败问题，添加数据库操作类中原生sql使用方法，分页助手函数中开启使用原生sql查询，验证码类中字体库问题等等，有想使
 
